@@ -5,6 +5,9 @@ import Post from '../components/Post';
 function PostsContainer ({images}) {
   if (!images) return null
   console.log('images', images)
+
+  // const [toggleLike, setToggleLike] = useState(false)
+
   return (
 
     <div className="container">
@@ -14,7 +17,7 @@ function PostsContainer ({images}) {
         title={images.title}
         description={images.explanation}
         imageSource={images.hdurl}
-
+        // toggleLike={toggleLike}
       />
     </div>
   )
