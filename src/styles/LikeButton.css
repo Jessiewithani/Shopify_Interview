@@ -1,3 +1,13 @@
-.like-btn {
-  background-color: tan;
+.like-icon {
+  width: 10%; 
+}
+
+.like-icon:hover {
+  cursor: pointer;
+}
+
+.liked {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(
+346deg
+) brightness(104%) contrast(97%);
 }
