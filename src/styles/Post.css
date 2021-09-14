@@ -1,3 +1,32 @@
 .post {
-  background-color: ivory;
+  background-color: black;
+  height: 800px;
+  width: 480px;
+}
+
+.img-container {
+  background-color: pink;
+  width: 480px;
+  height: 600px;
+}
+
+/* .pic-of-day {
+  height: inherit;
+} */
+
+.like-section {
+  background-color: orange;
+  height: 70px;
+}
+
+.img-desc {
+  background-color: grey;
+  height: 100px;
+  overflow:scroll;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+p {
+  margin: 0;
 }
