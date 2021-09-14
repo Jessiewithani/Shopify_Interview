@@ -1,10 +1,11 @@
 .navbar {
-  background-color: wheat;
-  height: 70px;
+  background-color: snow;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* we have to make this sticky */
+  border-bottom: 1px solid lightgrey;
 }
 
 h1 {

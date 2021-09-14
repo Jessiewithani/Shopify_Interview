@@ -1,41 +1,45 @@
 .post {
-  background-color: black;
+  /* background-color: white; */
   height: auto;
-  width: 480px;
+  width: 410px;
   /* border-radius: 15px; */
+  border: 1px lightgrey;
 }
 
 .img-container {
-  background-color: pink;
-  width: 480px;
-  height: 550px;
-  /* border-radius: 15px 15px 0px 0px; */
+  /* background-color: pink; */
+  width: 100%;
+  height: 410px;
 }
 
 .pic-of-day {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
 
 }
 
 .like-section {
-  background-color: orange;
-  height: 70px;
+  background-color: white;
+  height: 45px;
   display: flex;
   align-items: center;
   padding-left: 15px;
+  border: 1px solid lightgrey;
+  border-bottom: none;
 }
 
 .img-desc {
-  background-color: grey;
+  background-color: white;
   height: 130px;
   overflow:scroll;
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 8px 8px;
   padding-bottom: 15px;
+  border: 1px solid lightgrey;
+  border-top: none;
 
 }
 
