@@ -4,7 +4,7 @@ import '../styles/Navbar.css';
 function Navbar () {
   return (
     <div className="navbar">
-      SPACETAGRAM NAV
+      <h1>SPACESTGRAM</h1>
     </div>
   )
 }

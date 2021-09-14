@@ -1,3 +1,11 @@
 .navbar {
   background-color: wheat;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
 }
