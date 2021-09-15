@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Post.css';
 import LikeButton from '../components/LikeButton';
 
-function Post ({ date, title, description, imageSource}) {
+function Post ({ date, cameraTitle, roverTitle, imageSource}) {
 
 
   return (
@@ -14,9 +14,9 @@ function Post ({ date, title, description, imageSource}) {
       <LikeButton/>
       </div>
       <div className="img-desc">
-        <h3>{title}</h3>
-        {/* <span>{date}</span> */}
-        <p>{description}</p>
+        <h3>{`${roverTitle} Rover - ${cameraTitle}`}</h3>
+        <span>{date}</span>
+        {/* <p>{description}</p> */}
       </div>
     </section>
   )
