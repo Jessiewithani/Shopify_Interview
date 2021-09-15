@@ -3,7 +3,8 @@
   height: auto;
   width: 410px;
   /* border-radius: 15px; */
-  border: 1px lightgrey;
+  /* border: 1px lightgrey; */
+  margin-bottom: 15px;
 }
 
 .img-container {

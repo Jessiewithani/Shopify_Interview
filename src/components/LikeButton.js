@@ -4,7 +4,7 @@ import rocket from '../images/rocket.svg'
 
 function LikeButton () {
 
-  const rocketIcon = document.getElementsByClassName("like-icon")[0]
+  // const rocketIcon = document.getElementsByClassName("like-icon")[0]
 
   const [toggleLike, setToggleLike] = useState(true)
 
@@ -17,9 +17,9 @@ function LikeButton () {
 
   return (
     <div className="btn-section">
-      {console.log('rock', rocketIcon)}
+      {/* {console.log('rock', rocketIcon)} */}
       <div className="icon-cont" >
-        <img src={rocket} className={`like-icon ${!toggleLike ? 'liked' : null}`} alt="rocket" onClick={handleLikeClick}/>
+        <img src={rocket} className={`like-icon ${!toggleLike ? 'liked' : null}`} alt="like-rocket" onClick={handleLikeClick}/>
       {/* <button className="like-btn" onClick={handleLikeClick}>{toggleLike ? "LIKE" : "UNLIKE"}</button> */}
       </div>
     </div>
