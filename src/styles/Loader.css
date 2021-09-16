@@ -1,0 +1,10 @@
+.loader {
+  height: 100%;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
