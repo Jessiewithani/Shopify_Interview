@@ -2,11 +2,13 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import PostsContainer from './components/PostsContainer';
+import Loader from './components/Loader';
 
 function App() {
 
   
   const [spaceImages, setSpaceImages] = useState(null)
+  // const [loading, setLoading] = useState(false)
   
 
   useEffect(async () => {
@@ -18,7 +20,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <PostsContainer images={spaceImages}/>
+      {!spaceImages ? <Loader/> : <PostsContainer images={spaceImages}/>}
+      {/* <PostsContainer images={spaceImages}/> */}
     </div>
   );
 }
