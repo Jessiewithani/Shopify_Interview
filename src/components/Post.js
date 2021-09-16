@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Post.css';
 import LikeButton from '../components/LikeButton';
 
-function Post ({ date, cameraTitle, roverTitle, imageSource}) {
+function Post ({ id, date, cameraTitle, roverTitle, imageSource, likedPost}) {
 
 
   return (
@@ -11,7 +11,7 @@ function Post ({ date, cameraTitle, roverTitle, imageSource}) {
         <img src={imageSource} className="pic-of-day"/>
       </div>
       <div className="like-section">
-      <LikeButton/>
+      <LikeButton id={id} likedPost={likedPost}/>
       </div>
       <div className="img-desc">
         <h3>{`${roverTitle} Rover - ${cameraTitle}`}</h3>

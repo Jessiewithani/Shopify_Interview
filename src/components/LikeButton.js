@@ -2,28 +2,41 @@ import React, { useState } from 'react';
 import '../styles/LikeButton.css';
 import rocket from '../images/rocket.svg'
 
-function LikeButton () {
+function LikeButton ({ id, likedPost}) {
 
-  // const rocketIcon = document.getElementsByClassName("like-icon")[0]
+  const [liked, setLiked] = useState(likedPost || false)
 
-  const [toggleLike, setToggleLike] = useState(true)
+  console.log('likedPost', likedPost)
 
   const handleLikeClick = () => {
-    setToggleLike(!toggleLike)
+    setLiked(!liked)
+    
+    if (localStorage.getItem('likes')) {
+      const arrayOfLikes = Array.from(JSON.parse(localStorage.getItem('likes')))
+      console.log('HI', arrayOfLikes)
+      localStorage.setItem('likes', JSON.stringify([...arrayOfLikes, id]))
+    } else {
+      console.log('heree')
+      localStorage.setItem('likes', JSON.stringify([id]))
+    }
 
+    
   }
-
-  
 
   return (
     <div className="btn-section">
-      {/* {console.log('rock', rocketIcon)} */}
       <div className="icon-cont" >
-        <img src={rocket} className={`like-icon ${!toggleLike ? 'liked' : null}`} alt="like-rocket" onClick={handleLikeClick}/>
-      {/* <button className="like-btn" onClick={handleLikeClick}>{toggleLike ? "LIKE" : "UNLIKE"}</button> */}
+        <img src={rocket} className={`like-icon ${liked ? 'liked' : null }`} alt="like-rocket" onClick={handleLikeClick}/>
       </div>
     </div>
   )
 }
 
 export default LikeButton;
+
+
+// take the data from the api, make it into an object that can store 
+// "liked" = true | false state
+// use liked in replacement of `toggleLike` to determine class
+// take the posts that you stored, and put it in local storage
+// if local storage has posts, use that, via (useEffect otherwise hit api)

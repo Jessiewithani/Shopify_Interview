@@ -1,34 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/PostsContainer.css';
 import Post from '../components/Post';
 
 function PostsContainer ({images}) {
+  // use state to store all the postsz; setPosts([post, post])
+  // const [ likedPosts, setLikedPosts] = useState([]);
+  const likedPosts = localStorage.getItem('likes', []) // an array of likes from local storage
+
   if (!images) return null
   // console.log('images', images)
 
-  // const [toggleLike, setToggleLike] = useState(false)
+
   const roverImages = images.map(image => {
-    console.log('I', image)
     return(
       <Post
         date={image.earth_date}
         cameraTitle={image.camera.full_name}
         roverTitle={image.rover.name}
-        // description={images.explanation}
         imageSource={image.img_src}
         key={image.id}
         id={image.id}
+        likedPost={likedPosts && likedPosts.includes(image.id)}
       />
 
     )
   })
-  
   return (
-
-
     <div className="container">
       {roverImages}
-      
     </div>
   )
 }
