@@ -6,8 +6,15 @@
   align-items: center;
   /* we have to make this sticky */
   border-bottom: 1px solid lightgrey;
+  /* margin-bottom: 10px; */
 }
 
-h1 {
+.navbar-title {
   margin: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
