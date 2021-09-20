@@ -10,6 +10,8 @@
 .loading-title {
   margin: 0;
   margin-top: 20px;
+  font-family: 'Exo 2';
+  letter-spacing: 4px;
 }
 
 /* loader used from loading.io/css */
