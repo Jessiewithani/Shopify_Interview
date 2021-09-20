@@ -17,7 +17,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.img-date {
+  /* position: absolute; */
+  bottom: 25px;
+  /* right: 160px; */
+  background-color: transparent;
+  position: relative;
+  left: 305px;
+  color: darkorange;
+  font-family: 'Orbitron';
+  font-size: 13px;
 
 }
 
@@ -31,19 +43,21 @@
   border-bottom: none;
 }
 
-.img-desc {
+.img-title {
   background-color: white;
-  height: 130px;
+  height: auto;
   overflow:scroll;
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 4px px;
   padding-bottom: 15px;
   border: 1px solid lightgrey;
   border-top: none;
+  letter-spacing: 1px;
 
 }
 
-p {
+h3 {
+  font-family: 'Exo 2';
   margin: 0;
 }

@@ -1,13 +1,36 @@
 .navbar {
   background-color: snow;
-  height: 35px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* we have to make this sticky */
   border-bottom: 1px solid lightgrey;
+  /* margin-bottom: 10px; */
 }
 
-h1 {
+.navbar-title {
   margin: 0;
+  
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Exo 2';
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+/* 
+
+navbar font
+font-family: 'Exo 2', sans-serif;
+
+number font
+font-family: 'Orbitron', sans-serif;
+font-family: 'Rationale', sans-serif;
+
+
+*/

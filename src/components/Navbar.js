@@ -3,8 +3,8 @@ import '../styles/Navbar.css';
 
 function Navbar () {
   return (
-    <div className="navbar">
-      <h1>SPACESTGRAM</h1>
+    <div className="navbar sticky">
+      <h1 className="navbar-heading">SPACESTGRAM</h1>
     </div>
   )
 }
