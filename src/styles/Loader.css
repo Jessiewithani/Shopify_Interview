@@ -1,17 +1,16 @@
 .loader {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
-  /* background-color: pink; */
+  height: 100vh;
+  justify-content: center;
 }
 
 .loading-title {
-  margin: 0;
-  margin-top: 20px;
   font-family: 'Exo 2';
   letter-spacing: 4px;
+  margin: 0;
+  margin-top: 20px;
 }
 
 /* loader used from loading.io/css */
@@ -20,8 +19,8 @@
   color: official;
   display: inline-block;
   position: relative;
-  width: 80px;
   height: 80px;
+  width: 80px;
 }
 .lds-spinner div {
   transform-origin: 40px 40px;
