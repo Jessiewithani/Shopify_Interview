@@ -1,12 +1,10 @@
 .navbar {
-  background-color: snow;
-  height: 40px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  /* we have to make this sticky */
+  background-color: snow;
   border-bottom: 1px solid lightgrey;
-  /* margin-bottom: 10px; */
+  display: flex;
+  height: 40px;
+  justify-content: center;
 }
 
 .navbar-title {
@@ -15,22 +13,10 @@
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
   font-family: 'Exo 2';
   font-size: 13px;
   letter-spacing: 2px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
-/* 
-
-navbar font
-font-family: 'Exo 2', sans-serif;
-
-number font
-font-family: 'Orbitron', sans-serif;
-font-family: 'Rationale', sans-serif;
-
-
-*/

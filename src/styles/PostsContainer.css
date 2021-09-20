@@ -1,9 +1,8 @@
 .container {
-  background-color: snow;
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 55px;
+  background-color: snow;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-top: 55px;
 }

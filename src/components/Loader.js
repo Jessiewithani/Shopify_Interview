@@ -1,10 +1,7 @@
 import React from 'react';
 import '../styles/Loader.css';
-// import { loader } from 'cute-alien.png'
 
-function Loader({loading, images}) {
-
-
+function Loader() {
   return(
     <div className="loader">
       <div class="lds-spinner">
@@ -23,7 +20,6 @@ function Loader({loading, images}) {
       </div>
       <h1 className="loading-title">LOADING...</h1>
     </div>
-
   )
 }
 
