@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import '../styles/PostsContainer.css';
 import Post from '../components/Post';
 
@@ -21,6 +20,7 @@ function PostsContainer ({images}) {
       />
     )
   })
+  
   return (
     <div className="container">
       {roverImages}
