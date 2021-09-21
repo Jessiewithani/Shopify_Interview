@@ -5,7 +5,7 @@ function Navbar () {
   
   return (
     <div className="navbar sticky">
-      <h1 className="navbar-heading">SPACESTGRAM</h1>
+      <h1 className="navbar-heading">SPACESTAGRAM</h1>
     </div>
   )
 }
