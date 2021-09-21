@@ -3,10 +3,11 @@ import '../styles/Post.css';
 import LikeButton from '../components/LikeButton';
 
 function Post ({ id, date, cameraTitle, roverTitle, imageSource, likedPost}) {
+  
   return (
     <section className="post">
       <div className="img-container">
-        <img src={imageSource} className="pic-of-day"/>
+        <img src={imageSource} className="pic-of-day" alt={roverTitle}/>
         <div className="img-date">{date}</div>
       </div>
       <div className="like-section">
